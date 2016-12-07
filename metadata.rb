@@ -4,12 +4,16 @@ maintainer_email 'chef@eaglegenomics.com'
 license 'apachev2'
 description 'Installs/Configures magus'
 long_description 'Installs/Configures magus'
-version '0.1.0'
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Issues` link
-# issues_url 'https://github.com/<insert_org_here>/magus/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/EagleGenomics-cookbooks/magus'
+issues_url 'https://github.com/EagleGenomics-cookbooks/magus/issues'
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Source` link
-# source_url 'https://github.com/<insert_org_here>/magus' if respond_to?(:source_url)
+version '1.0.0'
+
+depends 'build-essential'
+depends 'apt'
+depends 'r'
+depends 'Samtools'
+depends 'sga'
+depends 'magic_shell'
+depends 'perlbrew'
