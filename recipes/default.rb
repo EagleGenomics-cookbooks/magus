@@ -21,13 +21,12 @@ include_recipe 'build-essential'
 include_recipe 'r'
 include_recipe 'Samtools'
 include_recipe 'sga'
-include_recipe 'perlbrew'
+include_recipe 'perl'
 
-perlbrew_cpanm 'even more ensembl webcode perl modules' do
-  # perlbrew node['perlbrew']['perl_version']
-  perlbrew 'perl-5.18.2'
-  modules ['Getopt::Long', 'FileHandle', 'Moose', 'Switch']
-end
+cpan_module 'Getopt::Long'
+cpan_module 'FileHandle'
+cpan_module 'Moose'
+cpan_module 'Switch'
 
 remote_file "#{Chef::Config[:file_cache_path]}/#{node['magus']['filename']}" do
   source node['magus']['url']
