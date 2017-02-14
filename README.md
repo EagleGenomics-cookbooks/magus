@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/EagleGenomics-cookbooks/magus.svg?branch=master)](https://travis-ci.org/EagleGenomics-cookbooks/magus)
+
 # MaGuS
 
 Description
@@ -43,7 +45,7 @@ License and Authors
 * Authors:: Daniel Barrell (<chef@eaglegenomics.com>)
 
 Copyright:: 2016, Eagle Genomics Ltd
-    
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
