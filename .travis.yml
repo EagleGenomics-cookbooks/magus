@@ -35,7 +35,9 @@ script:
 
 notifications:
   slack:
+    on_success: change
+    on_failure: change
     secure: vUFmHA2lgfj4/Rpd0eQQAm9fSZPnn6qrztbxH3RQD+D8go+6BG7c+SznL76F3DHDQ8GV71YXWkCSVY9umi+B3GZMFobHUADlVPSE38WPS9A1bXCogF6e90rUFClbdNpBnqr7O5qpHhKui3ei8d2Q+VPjKqu87n7qll1No7LJeNbHcoQ3AhjhE3gxRaNToSFU0hnsySigz470bUaP0/9+U2ofZ/dxOBFWn6wxTqhrD6L3SyEQGW4aOnW4aMEMjTGb2idNhh1nXEVz98Eih93HNyUStyE4CArT4XeA+1udcFp1j2+vGCVlVyXJKG1JH6WDytBPKnFWeLXVyKOlVa6UxQEmqmJqaxGGewqXlVcWVPO0wiJX+Gvb0eNYpgYT4dRhA6mTFqW8heoPAwD4AjtFHrNZHhe9Wfg5Eo9LGLoYNOjwsO09dvtzQA8Mc7UxUzbTIki5aw8qb8HfWwUNg7rUESkIPVWlogId1pEigkmX+CejmeFKlLBl8cgFDytBismSG48HiAdNZSAolIqXrbFpnDPWE8WNsFgTb6EiytZee6/8AzY0NTH27G2p7xvDT6/cEsp7IfNqy0Q5ua+BLt5lDiLA0DORkS07wteoff3746pCEFUb53KOAK/N9hWm28Ozn0ml22DcAuRbN6kUGfmf9uLXG2oi7H+L9VNpq0KiJao=
   email:
     on_success: change
-    on_failure: always
+    on_failure: change
